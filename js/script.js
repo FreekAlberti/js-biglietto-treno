@@ -11,7 +11,8 @@ if (age < 18) {
 } else if (age >= 65) {
   prezzo = prezzo - ((prezzo / 100) * 40);
 }
+var prezzoArrotondato = Math.round( prezzo * 100) / 100;
 // risultati nel codice html
 document.getElementById("distanza").innerHTML = distanza;
 document.getElementById("age").innerHTML = age;
-document.getElementById("prezzo").innerHTML = prezzo;
+document.getElementById("prezzo").innerHTML = prezzoArrotondato;
